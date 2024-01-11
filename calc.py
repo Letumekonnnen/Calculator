@@ -17,3 +17,8 @@ def divide(x, y):
 
 def power(x, y):
     return x ** y
+def square_root(x):
+    if x >= 0:
+        return math.sqrt(x)
+    else:
+        return "Invalid input for square root."

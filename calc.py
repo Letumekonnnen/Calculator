@@ -22,3 +22,12 @@ def square_root(x):
         return math.sqrt(x)
     else:
         return "Invalid input for square root."
+    def calculator():
+    print("Welcome to the Calculator!")
+    print("Choose an operation:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    print("5. Power")
+    print("6. Square Root")

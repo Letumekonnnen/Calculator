@@ -41,10 +41,20 @@ def calculator():
         return
     
     if choice in ['1', '2', '3', '4', '5']:
-        num1 = float(input("Enter the first number: "))
-        num2 = float(input("Enter the second number: "))
+        while True:
+            try:
+                num1 = float(input("Enter the first number: "))
+                num2 = float(input("Enter the second number: "))
+                break
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
     elif choice == '6':
-        num1 = float(input("Enter the number: "))
+        while True:
+            try:
+                num1 = float(input("Enter the number: "))
+                break
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
     
     if choice == '1':
         result = add(num1, num2)
